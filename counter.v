@@ -19,7 +19,14 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module counter(
+	input CLK,
+	output reg [3:0] Q
     );
+	 
+always @(posedge CLK)
+begin 
+		Q <= Q + 1
+end
 
 
 endmodule
