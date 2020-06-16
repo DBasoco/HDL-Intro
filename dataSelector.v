@@ -29,10 +29,10 @@ module dataSelector(
 	 
 always @(A or B or SEL)
 begin
-		if (SEL)
-			Q = A;
-		else
-			Q = B;
+	if (SEL)
+		Q = A;
+	else
+		Q = B;
 end
 
 
